@@ -1,184 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="description" content="PROG 109 - Chessboard" />
-<meta charset="utf-8" />
-<title>Chess HTML5-Template</title>
-<link rel="stylesheet" media="screen" href="https://yevgeniymazur.github.io/dev109/a2/style.css" type="text/css"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Chessboard">
+<title>Chessboard</title>
+<link rel="stylesheet" href="https://yevgeniymazur.github.io/dev109/a2/style.css">
+
 </head>
-
-
-
 <body>
-
 
 <h1 id="title">Chessboard</h1>
 
 <div id="container">
-
-<div class="row>"      <!-- Row 1 --> 
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="clear"> </div>
-
-<div class="row>"      <!-- Row 2 --> 
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="clear"> </div>
-
-<div class="row>"      <!-- Row 3 --> 
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="clear"> </div>
-
-<div class="row>"      <!-- Row 4 --> 
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="clear"> </div>
-
-<div class="row>"      <!-- Row 5 --> 
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="clear"> </div>
-
-<div class="row>"      <!-- Row 6 --> 
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-
-<div class="row>"      <!-- Row 7 --> 
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-
-<div class="row>"      <!-- Row 8 --> 
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
-<div class="red"></div>
-<div class="black"></div>
+  <!-- 1st rank (Black pieces) -->
+  <div class="row">
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Chess_rdt60.png" alt="Black Rook"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Chess_ndt60.png" alt="Black Knight"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Chess_bdt60.png" alt="Black Bishop"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Chess_qdt60.png" alt="Black Queen"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Chess_kdt60.png" alt="Black King"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Chess_bdt60.png" alt="Black Bishop"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Chess_ndt60.png" alt="Black Knight"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Chess_rdt60.png" alt="Black Rook"></div>
+  </div>
+  <!-- 2nd rank (Black pawns) -->
+  <div class="row">
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Black Pawn"></div>
+  </div>
+  <!-- Empty rows -->
+  <div class="row">
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+  </div>
+  <div class="row">
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+  </div>
+  <div class="row">
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+  </div>
+  <div class="row">
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+    <div class="black"></div>
+    <div class="red"></div>
+  </div>
+  <!-- 7th rank (White pawns) -->
+  <div class="row">
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="White Pawn"></div>
+  </div>
+  <!-- 8th rank (White pieces) -->
+  <div class="row">
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="White Rook"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="White Knight"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="White Bishop"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Chess_qlt60.png" alt="White Queen"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Chess_klt60.png" alt="White King"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="White Bishop"></div>
+    <div class="red">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="White Knight"></div>
+    <div class="black">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="White Rook"></div>
+  </div>
 </div>
 
-<div class="clear"> </div>
+<div id="footer">
+  <p><a href="https://validator.w3.org/" target="_blank">NU HTML Checker</a></p>
+  <p
+  ><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="W3C Logo" height="30" width="30"></p>
+</div>
 
-
-
-
-
-<div id="footer"><p><a href="https://validator.w3.org/nu/check?uri=referer"
-target="_blank">NU HTML Checker </a><br>
-<a href="http://jigsaw.w3.org/css-validator/check/referer" 
-target="_blank"><img style="border:0;width:88px;height:31px"
-src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="Valid CSS!"></a></p></div>
 </body>
-
 </html>
-
-
-
-  #title {
-position:fixed;
-top:0px;
-left:0px;
-padding:10px;
-margin:0px;
-width:100%;
-background-color:#62C2CE;
-text-align:center;
-z-index:10;
-font-family: 'JustLettersMedium';
-font-weight: normal;
-font-style: normal;
-font-size:36px;
-}
-
-
-#container {
- margin-top:20%;
- margin-left:10%;
- margin-right:10%;
- margin-bottom:5%;
-}
-
-
-.row{
-position:relative;
-margin-left:10%;
-margin-right:10%;
-}
-
-.red{
-border: 1px solid red;
-width: 10%;
-height: 50px;
-background-color:red;
-float:left;
-}
-
-.black{
-border: 1px solid #66cdaa;
-width: 10%;
-height: 50px;
-background-color:#66cdaa;
-float:left;
-}
-
-#footer {
- border:solid 1px;
- padding: 10px;
- margin:10px;
-}
-img {
- margin-left: 5px;
- margin-top:10px;
- }
-body {
- background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
-}
