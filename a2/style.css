@@ -18,7 +18,7 @@
     background-color: #62C2CE;
     text-align: center;
     z-index: 10;
-    font-family: 'Just Another Hand', cursive;
+    font-family: 'dogica', sans-serif;
     font-size: 68px;
     font-weight: normal;
   }
@@ -60,7 +60,7 @@
 
    #footer {
     margin-top: 60px;
-    margin-bottom: 1px;
+    margin-bottom: 0px;
     border: solid 1px;
     padding: 40px;
     background-color: #62C2CE;
