@@ -1,22 +1,22 @@
-		body {
+	body {
 				font-family: Helvetica, Arial, sans-serif;
 				color: #665544;
-				padding: 0 15% 0 15%;}
+				padding: 0 15% 0 15%;}	
 			
       h1, h2 {
 				text-align: center;
         color:blue;
-        font-family: 'DancingScriptRegular';
-        font-size:400%
+        font-family: 'Dancing Script';
+        font-size:400%;
         }
 			
-      i, a, a:hover, a:visited {
+     i, a, a:hover, a:visited {
 				color: darkgreen;
         }
 		
     p {
-   font-family: 'DancingScriptRegular';
+   font-family: 'Dancing Script';
    font-weight: normal;
    font-style: normal;
    font-size: 200%;
-} 
+   }
