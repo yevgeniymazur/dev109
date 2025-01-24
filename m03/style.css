@@ -10,9 +10,9 @@
         font-size:400%
         }
 			
-      i{
-        color:darkgreen;
-      }
+      i, a, a:hover, a:visited {
+				color: darkgreen;
+        }
 		
     p {
    font-family: 'DancingScriptRegular';
