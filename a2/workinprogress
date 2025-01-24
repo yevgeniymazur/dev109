@@ -5,167 +5,239 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Chessboard">
 <title>Chessboard</title>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap">
-<style>
-  /* Styling for the body and background */
-  body {
-    margin: 0;
-    padding: 0;
-    background-image: url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
-    background-size: cover;
-    text-align: center;
-  }
+<link rel="stylesheet" href="https://yevgeniymazur.github.io/dev109/a2/style.css" type:"text/css">
 
-  /* Title styles */
-  #title {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    padding: 10px;
-    margin: 0px;
-    width: 100%;
-    background-color: #62C2CE;
-    text-align: center;
-    z-index: 10;
-    font-family: 'Just Another Hand', cursive;
-    font-size: 36px;
-    font-weight: normal;
-  }
-
-  /* Container and chessboard layout */
-  #container {
-    display: inline-block;
-    border: 5px solid #000;
-    background: #fff;
-    margin-top: 80px; /* Offset for the fixed title */
-  }
-
-  .row {
-    display: flex;
-  }
-
-  .red, .black {
-    border: 1px solid #000;
-    width: 90px;
-    height: 90px;
-  }
-
-  .red {
-    background-color: red;
-  }
-
-  .black {
-    background-color: #66cdaa;
-  }
-
-  /* Footer styles */
-  #footer {
-    margin-top: 60px;
-    border: solid 1px;
-    padding: 10px;
-    background-color: #62C2CE;
-  }
-
-  img {
-    margin-left: 155px;
-    margin-top: 10px;
-  }
-</style>
 </head>
 <body>
 
 <h1 id="title">Chessboard</h1>
 
-<div id="container">
+<div class="chessBoard">
   <!-- Chessboard rows -->
-  <div class="row">
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-  </div>
-  <div class="row">
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-  </div>
-  <div class="row">
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-  </div>
-  <div class="row">
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-  </div>
-  <!-- Additional 4 rows -->
-  <div class="row">
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-  </div>
-  <div class="row">
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-  </div>
-  <div class="row">
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-  </div>
-  <div class="row">
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
-    <div class="black"></div>
-    <div class="red"></div>
+  
+<div class="square red">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Chess_rdt60.png" alt="Rook"></div>
+    
+<div class="square black">
+<div class="piece knight" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Chess_ndt60.png" alt="Knight">
+        </div></div>
+ 
+<div class="square red">
+<div class="piece bishop" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Chess_bdt60.png" alt="Bishop">
+        </div></div>
+
+<div class="square black">
+<div class="piece queen" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Chess_qdt60.png" alt="Queen">
+        </div></div>
+
+<div class="square red">
+<div class="piece king" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Chess_kdt60.png" alt="King">
+        </div></div>
+
+<div class="square black">
+<div class="piece bishop" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/Chess_bdt60.png" alt="Bishop">
+        </div></div>
+
+<div class="square red">
+<div class="piece knight" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Chess_ndt60.png" alt="Knight">
+        </div></div>
+
+<div class="square black">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Chess_rdt60.png" alt="Rook">
+        </div></div>
+
+</div>
+
+
+
+
+<div class="square black">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+<div class="square red">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+<div class="square black">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+<div class="square red">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+<div class="square black">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+<div class="square red">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+<div class="square black">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+<div class="square red">
+<div class="piece rook" color="black">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Chess_pdt60.png" alt="Pawn">
+        </div></div>
+
+
+</div>
+
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="black"></div>
+</div>
+
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+</div>
+
+
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+</div>
+
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+<div class="square black"></div>
+<div class="square red"></div>
+
+</div>
+
+
+
+<div class="square red">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+<div class="square black">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+<div class="square red">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+<div class="square black">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+<div class="square red">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+<div class="square black">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+<div class="square red">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+<div class="square black">
+<div class="piece pawn" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Chess_plt60.png" alt="Pawn">
+          </div> </div>
+
+</div>
+
+
+
+<div class="square black">
+<div class="piece rook" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="Rook">
+          </div> </div>
+
+<div class="square red">
+<div class="piece knight" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="Knight">
+          </div></div>
+
+<div class="square black">
+<div class="piece bishop" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="Bishop">
+          </div> </div>
+
+<div class="square red">
+<div class="piece queen" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Chess_qlt60.png" alt="Queen">
+          </div> </div>
+
+<div class="square black">
+<div class="piece king" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Chess_klt60.png" alt="King">
+          </div> </div>
+
+<div class="square red">
+<div class="piece bishop" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Chess_blt60.png" alt="Bishop">
+          </div></div>
+
+<div class="square black">
+<div class="piece knight" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/28/Chess_nlt60.png" alt="Knight">
+          </div></div>
+
+<div class="square red">
+    
+<div class="piece rook" color="black">
+<div class="piece rook" color="white">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Chess_rlt60.png" alt="Rook">
+          </div>  
   </div>
 </div>
 
 
 <div id="footer">
-  <a href="https://validator.w3.org/" target="_blank">NU HTML Checker</a>
-  <img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="W3C Logo" width="30">
-  <p>Bin info | Just now</p>
+<p><a href="https://validator.w3.org/" target="_blank">NU HTML Checker</a></p>
+<p><img src="https://www.w3.org/html/logo/downloads/HTML5_Logo_256.png" alt="W3C Logo" width="30"></p>
 </div>
 
 </body>
