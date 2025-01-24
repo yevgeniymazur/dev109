@@ -1,9 +1,8 @@
   body {
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-image: url("https://i.redd.it/m4qms3gp99za1.png");
     background-size: cover;
-    background-repeat: stretch;
     background-position: center;
     text-align: center;
   }
@@ -59,23 +58,16 @@
     height: auto;
   }
 
-  /* Footer styles */
-  #footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    padding: 10px;
+   #footer {
+    margin-top: 60px;
+    margin-bottom: 1px;
+    border: solid 1px;
+    padding: 40px;
     background-color: #62C2CE;
     text-align: center;
-    border-top: 2px solid #000;
   }
 
-  #footer img {
-    margin: 60px auto;
-  }
-
-  #footer p {
-    margin: 1px;
-    font-family: Arial, sans-serif;
+  img {
+    margin-left: 0px;
+    margin-top: 10px;
   }
