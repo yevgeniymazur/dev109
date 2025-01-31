@@ -6,9 +6,14 @@
     background-position: center;
     text-align: center;
   }
+/* 
+   Adjusted the header as it was floating instead of scrolling with
+the rest of the page. 
+   
+*/
 #header {
   position: relative;
-  width: 100%;
+  width: 100%;         /* Yevgeniy Mazur set 1 */
   align-content: top;
 }
   /* Title styles */
@@ -17,7 +22,7 @@
     top: 0;
     left: 0;
     padding: 10px;
-    margin: 0;
+    margin: 0;                     /* Yevgeniy Mazur set 1, Title with font change */
     width: 100%;
     background-color: #62C2CE;
     text-align: center;
@@ -32,13 +37,13 @@
     display: inline-block;
     border: 4px solid #000;
     background: #fff;
-    margin-top: 150px; /* Offset for the fixed title */
+    margin-top: 5%; /* Changed to use % instead of px */
   }
 
   .row {
     display: flex;
   }
-
+ /* Yevgeniy Mazur set 1 */
   .red, .black {
     width: 90px;
     height: 90px;
@@ -47,7 +52,7 @@
     align-items: center;
     border: 1px solid #000; /* Optional border for clarity */
   }
-
+/* Yevgeniy Mazur set 1 */
   .red {
     background-color: greenyellow;
   }
@@ -58,7 +63,7 @@
 
   /* Chess piece styles */
   .red img, .black img {
-    width: 80%;
+    width: 80%; /* Yevgeniy Mazur set 1 */
     height: auto;
   }
 
