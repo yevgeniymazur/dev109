@@ -1,75 +1,53 @@
 * {
-    box-sizing: border-box;
-    text-align: center;
-}
-
-/* Set Global Styles */
-body {
-    font-family: Arial, Verdana, sans-serif;
-    color: #665544;
-    width: 90%;
-    margin: 0 auto;
-}
-
-/* Clearfix for Floating Elements */
-#content {
-    overflow: auto;
-}
-
-/* Navigation (Menu) */
-#nav {
-    background-color: #ffcc00; /* Yellow */
-    padding: 0.5em 0;
-}
-
-#feature {
-    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seattle_4.jpg/1280px-Seattle_4.jpg'); 
-    background-size: cover;
-    background-position: center;
-    color: white; /* Ensures text is visible */
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 10em;
-    margin-bottom: 1em;
-    padding: 1em;
-}
-
-/* Column Layout */
-.column1 {
-    background-color: #0099cc; /* Blue */
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    height: 10em;
-    padding: 1em;
-    color: white;
-}
-
-.column2 {
-    background-color: #33cc33; /* Green */
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    height: 10em;
-    padding: 1em;
-    color: white;
-}
-
-.column3 {
-    background-color: #cc3366; /* Pink */
-    width: 31.3%;
-    float: left;
-    margin: 1%;
-    height: 10em;
-    padding: 1em;
-    color: white;
-}
-
-/* Footer */
-#footer {
-    background-color: #666666; /* Dark Gray */
-    padding: 0.5em 0;
-    color: white;
-}
+				font-family: Arial, Verdana, sans-serif;
+				color: #665544;
+				text-align: center;}
+			body {
+				width: 90%;
+				margin: 0 auto;}
+			#content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+     #nav {
+       background-color: pink;
+       padding: 0.5em;
+       }
+     #footer {
+       margin: 1%;
+       background-color: purple;
+       padding: 0.5em; 
+       }
+       
+       li {
+				display: inline;
+				padding: 0.5em;}
+       
+       .column1 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: red;
+        }
+        .column2 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: greenyellow;
+        }
+        .column3 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: turquoise;
+        }
+        #feature {
+ margin: 1%;
+ height: 10em;
+ margin-bottom: 1em;
+ background-color: blue;
+ background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seattle_4.jpg/1280px-Seattle_4.jpg");
+ background-size:contain;
+ background-position: right;
+ background-repeat:no-repeat;
+ }
