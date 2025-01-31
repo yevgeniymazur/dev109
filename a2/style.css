@@ -6,7 +6,11 @@
     background-position: center;
     text-align: center;
   }
-
+#header {
+  position: relative;
+  width: 100%;
+  align-content: top;
+}
   /* Title styles */
   #title {
 
