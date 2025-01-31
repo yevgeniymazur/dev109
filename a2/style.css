@@ -14,7 +14,7 @@ the rest of the page.
 #header {
   position: relative;
   width: 100%;         /* Yevgeniy Mazur set 1 */
-  align-content: top;
+  align-content: center;
 }
   /* Title styles */
   #title {
