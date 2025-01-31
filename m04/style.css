@@ -1,11 +1,21 @@
 * {
 				font-family: Arial, Verdana, sans-serif;
-				color: #665544;
+				color: black;
 				text-align: center;}
 			body {
-				width: 90%;
-				margin: 0 auto;}
-			#content {
+				width: fill-box;
+				margin: 0 auto;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Australian_outback_-_Australische_Outback.jpg/1280px-Australian_outback_-_Australische_Outback.jpg");
+        background-size: cover;
+        background-repeat:repeat;
+        background-position: center;
+        }
+			h1 {
+   font-family: 'Dodgy Ultra Ultra';
+   font-weight: normal;
+   font-style: normal;
+} 
+      #content {
 				overflow: auto;}
 			#nav, #feature, #footer {
 				margin: 1%;}
@@ -45,7 +55,7 @@
  margin: 1%;
  height: 10em;
  margin-bottom: 1em;
- background-color: blue;
+ background-color: lightblue;
  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Seattle_4.jpg/1280px-Seattle_4.jpg");
  background-size:contain;
  background-position: right;
