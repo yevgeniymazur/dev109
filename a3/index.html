@@ -1,15 +1,15 @@
- 	
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta name="description" content="Week 6 - BC - Rhombus">
+<meta name="author" content="Yevgeniy Mazur">
 <meta charset="utf-8">
 <title>JS Bin</title>
+
 </head>
 <body>
 <label>What is the size of Rhombus?</label><br>
-<input type="range" id="rHeight" value="5" size="5" min="1" max="20">
+<input type="text" id="rHeight" value="5" size="5">
 <br>
 <label>Choose color for Even position</label><br>
 <select id="colorEven">
@@ -30,30 +30,24 @@
 <option value="*">*</option>
 <option value="$">$</option>
 <option value="@">@</option>
-<option value="&">&</option>
-<option value="#">#</option>
-<option value="%">%</option>
-<option value="x">x</option>
-<option value="0">0</option>
-<option value="+">+</option>
 </select>
 <br>
 <button onclick="createRhombus(document.getElementById('rHeight').value,
 document.getElementById('colorEven').value,
 document.getElementById('colorOdd').value,
 document.getElementById('symbol').value);">Display Rhombus</button>
-<div id="Rhombus" style="text-align: center;">
-  <div id="upLeft"></div>
-  <div id="upRight"></div>
-  <div id="downLeft"></div>
-  <div id="downRight"></div>
-</div>
+<div id="upLeft">Rhombus</div>
+<div id="upRight"></div>
 
-<!-- CALL YOUR JAVASCRIPT FILE IF YOU ARE USING A HOSTING ENVIRONMENT
+<div class="clear"></div>
+
+<div id="downLeft"></div>
+<div id="downRight"></div>
+
+
 
 <script src=""></script>
 
--->
 
 </body>
 </html>
