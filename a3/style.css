@@ -1,0 +1,23 @@
+#upLeft {
+  float: left;
+}
+
+#upRight {
+  float: left;
+}
+
+#downLeft {
+  float: left;
+}
+
+#downRight {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+.space {
+  color: white;
+}
