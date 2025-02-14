@@ -1,22 +1,25 @@
-<!DOCTYPE html>
-<html>
+ <!DOCTYPE html>
+<html lang="en">
 <head>
 <meta name="description" content="Week 6 - BC - Rhombus">
 <meta name="author" content="Yevgeniy Mazur">
 <meta charset="utf-8">
 <link rel="Stylesheet" href="https://yevgeniymazur.github.io/dev109/a3/style.css" type="text/css">
-  <title>JS Bin</title>
-
+<title>Artifact 3</title>
 </head>
 <body>
 <label>What is the size of Rhombus?</label><br>
 <input type="text" id="rHeight" value="5" size="5">
 <br>
+
 <label>Choose color for Even position</label><br>
 <select id="colorEven">
 <option value="#0000FF">Blue</option>
 <option value="#FF0000">Red</option>
 <option value="#FF9900">Orange</option>
+<option value="#FF0099">Pink</option>
+<option value="#33FF00">Green</option>
+<option value="#660099">Purple</option>
 </select><br>
 
 <label>Choose color for Odd position</label><br>
@@ -24,6 +27,11 @@
 <option value="#FF0099">Pink</option>
 <option value="#33FF00">Green</option>
 <option value="#660099">Purple</option>
+<option value="#C08865">Camel</option>
+<option value="#33FF00">Lime Green</option>
+<option value="#9D6142">Beaver</option>
+
+
 </select>
 <br>
 <label>Choose symbol for Rhombus</label>
@@ -31,17 +39,19 @@
 <option value="*">*</option>
 <option value="$">$</option>
 <option value="@">@</option>
+<option value="%">%</option>
+<option value="!">!</option>
+<option value="0">0</option>
 </select>
 <br>
+
 <button onclick="createRhombus(document.getElementById('rHeight').value,
 document.getElementById('colorEven').value,
 document.getElementById('colorOdd').value,
 document.getElementById('symbol').value);">Display Rhombus</button>
 <div id="upLeft">Rhombus</div>
 <div id="upRight"></div>
-
 <div class="clear"></div>
-
 <div id="downLeft"></div>
 <div id="downRight"></div>
 
