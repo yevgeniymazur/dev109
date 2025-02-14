@@ -98,7 +98,7 @@ function downRight(pHeight, pColorEven, pColorOdd, pSymbol){
 // Slider code for live updates
 document.getElementById('rHeightRange').addEventListener('input', function() {
   var newSize = this.value;
-  document.getElementById('rhombusSizeDisplay').innerText = newSize;
+  document.getElementById('rhombusSizeDisplay').textContent = newSize;
   createRhombus(
     newSize,
     document.getElementById('colorEven').value,
