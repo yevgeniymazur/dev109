@@ -88,6 +88,7 @@
 }
 .columnh2 {
     background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/About.png'); 
+    background-size: cover;
     background-position: center;
 }
 .columnh3 {
