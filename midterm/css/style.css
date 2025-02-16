@@ -63,15 +63,38 @@
           margin: 1%;
           background-color: #2F3638;
         }
-        .column1, .column2, .column3 {
-    background-image: url('path-to-your-image.jpg'); /* Replace with your image URL */
-    background-size: cover; /* Ensure the image covers the entire area */
-    background-position: center; /* Center the background image */
-    height: 150px;
+.columnh1 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .columnh2 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .columnh3 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }        
+.column1 {
+    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/github.png'); 
+    background-size: cover;
+    background-position: center;
 }
-
-.column1, .column2, .column3 p {
-    color: white; /* Ensure text is white */
+.columnh2 {
+    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/About.png'); 
+    background-position: center;
+    height: 150px;
+.columnh3 {
+    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/Road.png');
+    background-size: cover;
+    background-position: center; 
+    height: 150px;
 }
         #feature {
  margin: 6%;
