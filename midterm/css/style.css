@@ -25,7 +25,8 @@
        }
      #footer {
        margin: 1%;
-       padding: 0.5em; 
+       padding: 0.5em;
+       padding-top: 100%;
        }
        
        li {
@@ -50,6 +51,19 @@
           margin: 1%;
           background-color: #2F3638;
         }
+        .column4 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .column5 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        
         #feature {
  margin: 6%;
  height: 10em;
