@@ -63,7 +63,16 @@
           margin: 1%;
           background-color: #2F3638;
         }
-        
+        .column1, .column2, .column3 {
+    background-image: url('path-to-your-image.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Ensure the image covers the entire area */
+    background-position: center; /* Center the background image */
+    height: 150px;
+}
+
+.column1, .column2, .column3 p {
+    color: white; /* Ensure text is white */
+}
         #feature {
  margin: 6%;
  height: 10em;
