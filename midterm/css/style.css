@@ -109,16 +109,7 @@
     background-position: center; 
    
 }
-.columnh4 {
-    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/css.png'); 
-     background-size: cover;
-    background-position: center;
-  }  
-.columnh5 {
-    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/html.png');
-    background-size: cover;
-    background-position: center; 
-}
+
 	#feature {
  margin: 6%;
  height: 10em;
