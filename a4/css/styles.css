@@ -1,0 +1,95 @@
+/* 1. Base Page (Dark Background) */
+body {
+  background-color: #2b2b2b; /* Dark gray background for the main page */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #fff; /* White text outside the form */
+}
+
+/* 2. Form Container: Neutral Colors */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #000;    /* Black border */
+  border-radius: 8px;
+  background-color: white;
+  color: #000;               /* Dark text for contrast within the form */
+}
+
+/* 2.1. Form Headings and Labels */
+form h1, 
+form label {
+  color: #000;              /* Dark text */
+  font-weight: bold;
+}
+
+/* 3. Overall Error Messages Container */
+#errorMessages {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* 4. Inline Error Messages */
+.error {
+  display: block;
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+/* 5. Inputs, Selects, and Textareas */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: #d3d3d3; /* Light grey background for fields */
+  color: #000;             /* Dark text for readability */
+  border: 2px solid #000;  /* Black border */
+  border-radius: 4px;
+  cursor: text;
+}
+
+/* 6. Black Submit Button with White Text */
+input[type="submit"] {
+  background-color: #000;  /* Black button */
+  color: #fff;             /* White text */
+  border: 2px solid #000;  /* Black border */
+  border-radius: 8px;      /* Rounded corners */
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Hover effect for the submit button */
+input[type="submit"]:hover {
+  background-color: #333;  /* Slightly lighter black on hover */
+}
+
+/* 7. Thank You Container Styles */
+.thank-you-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid #000;  /* Black border to match form */
+  border-radius: 8px;
+  background-color: #fff;  /* White background */
+  color: #000;             /* Dark text for contrast */
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.thank-you-container h1 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.thank-you-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
