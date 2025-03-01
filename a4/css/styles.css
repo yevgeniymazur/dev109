@@ -94,35 +94,40 @@ input[type="submit"]:hover {
   margin-bottom: 10px;
 }
 
+/* 8. Picture-Link Group Styles */
 .picture-link-group {
-  text-align: center;  /* Center the entire group */
-  margin: 20px 0;
-}
-
-.picture-link-group img,
-.picture-link-group a {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the whole group */
+  gap: 20px;              /* Space between image and link */
+  margin-bottom: 20px;    /* Space between groups */
 }
 
 .picture-link-group img {
-  width: 33%;       /* Or use a fixed size (e.g., width: 100px;) */
-  max-width: 100px; /* Ensure a consistent maximum size */
-  height: auto;
+  /* Set a fixed height and let width adjust while maintaining aspect ratio */
+  height: 80px;          /* Adjust as needed */
+  width: auto;
+  object-fit: cover;
 }
 
 .picture-link-group a {
-  color: #fff;      /* White text for the link */
-  text-decoration: none;
-  font-size: 18px;
+  display: inline-block;
+  width: 25%;              /* The link takes up about 25% of the group's width */
+  text-align: center;
+  background-color: #000;  /* Black background */
+  color: #fff;             /* White text */
+  border: 2px solid #000;  /* Black border */
+  border-radius: 8px;      /* Rounded corners */
+  padding: 10px 0;         /* Vertical padding (adjust if needed) */
   font-weight: bold;
-  margin-left: 20px; /* Space between the image and the link */
+  text-decoration: none;
 }
 
 .picture-link-group a:hover {
+  background-color: #333;  /* Slightly lighter on hover */
   text-decoration: underline;
 }
-}
+
 
 
 
