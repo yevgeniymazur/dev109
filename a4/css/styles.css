@@ -94,32 +94,43 @@ input[type="submit"]:hover {
   margin-bottom: 10px;
 }
 
-/* 8. Picture-Link Group Styles */
+/* Picture-Link Group Styles */
 .picture-link-group {
   display: flex;
-  align-items: center;
-  justify-content: center; /* Center the group horizontally */
-  gap: 10px;           /* Space between image and link */
-  margin-bottom: 20px; /* Space between groups */
+  align-items: center;         /* Vertically centers the items */
+  justify-content: center;     /* Centers the group horizontally */
+  gap: 10px;                   /* Space between the image and the link */
+  margin-bottom: 20px;         /* Space between groups */
 }
 
-.picture-link-group img {
-  width: 33%;   /* Each image takes 33% of the container's width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain;  /* Or use cover if you prefer cropping */
+.image-wrapper {
+  flex: 0 0 33%;               /* Fix the image wrapper to 33% of the container width */
+  max-width: 33%;
 }
 
-.picture-link-group a {
+.image-wrapper img {
+  width: 100%;                 /* Image fills the image wrapper */
+  height: auto;                /* Maintain aspect ratio */
+  object-fit: cover;           /* Crop image if needed to fill area */
+  /* Optional: Set a fixed height if you want a uniform height, e.g.: */
+  /* height: 100px; */
+}
+
+.link-wrapper {
+  flex: 0 0 auto;             /* The link takes only the space it needs */
+}
+
+.link-wrapper a {
   font-size: 18px;
-  color: #fff;         /* White text for the link */
+  color: #fff;                /* White text for the link */
+  background-color: #000;     /* Black background for contrast */
   text-decoration: none;
   font-weight: bold;
-  background-color: #000; /* Black background for contrast */
   padding: 5px 10px;
   border-radius: 4px;
 }
 
-.picture-link-group a:hover {
+.link-wrapper a:hover {
   text-decoration: underline;
 }
 
