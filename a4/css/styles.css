@@ -93,3 +93,31 @@ input[type="submit"]:hover {
   font-size: 18px;
   margin-bottom: 10px;
 }
+
+/* 8. Picture-Link Group Styles */
+.picture-link-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;           /* Space between image and link */
+  margin-bottom: 20px; /* Space between groups */
+}
+
+.picture-link-group img {
+  width: 100px;  /* Forces each image to be the same width */
+  height: 100px; /* Forces each image to be the same height */
+  object-fit: cover;  /* Ensures the images fill the area without distortion */
+}
+
+.picture-link-group a {
+  font-size: 18px;
+  color: #fff;         /* White text for the link */
+  text-decoration: none;
+  font-weight: bold;
+  background-color: #000; /* Optional: black background for better contrast */
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.picture-link-group a:hover {
+  text-decoration: underline;
+}
