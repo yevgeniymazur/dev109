@@ -94,33 +94,34 @@ input[type="submit"]:hover {
   margin-bottom: 10px;
 }
 
-/* 8. Picture-Link Group Styles */
 .picture-link-group {
-  display: flex;
-  align-items: center;
-  justify-content: center; /* Center the group horizontally */
-  gap: 10px;           /* Space between image and link */
-  margin-bottom: 20px; /* Space between groups */
+  text-align: center;  /* Center the entire group */
+  margin: 20px 0;
+}
+
+.picture-link-group img,
+.picture-link-group a {
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .picture-link-group img {
-  width: 33%;   /* Each image takes 33% of the container's width */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: contain;  /* Or use cover if you prefer cropping */
+  width: 33%;       /* Or use a fixed size (e.g., width: 100px;) */
+  max-width: 100px; /* Ensure a consistent maximum size */
+  height: auto;
 }
 
 .picture-link-group a {
-  font-size: 18px;
-  color: #fff;         /* White text for the link */
+  color: #fff;      /* White text for the link */
   text-decoration: none;
+  font-size: 18px;
   font-weight: bold;
-  background-color: #000; /* Black background for contrast */
-  padding: 5px 10px;
-  border-radius: 4px;
+  margin-left: 20px; /* Space between the image and the link */
 }
 
 .picture-link-group a:hover {
   text-decoration: underline;
+}
 }
 
 
