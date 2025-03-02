@@ -105,7 +105,7 @@ input[type="submit"]:hover {
 
 .picture-link-group img {
   /* Set a fixed height and let width adjust while maintaining aspect ratio */
-  height: 80px;          /* Adjust as needed */
+  height: 80px;          
   width: auto;
   object-fit: cover;
 }
@@ -118,7 +118,7 @@ input[type="submit"]:hover {
   color: #fff;             /* White text */
   border: 2px solid #000;  /* Black border */
   border-radius: 8px;      /* Rounded corners */
-  padding: 10px 0;         /* Vertical padding (adjust if needed) */
+  padding: 10px 0;         /* Vertical padding  */
   font-weight: bold;
   text-decoration: none;
 }
