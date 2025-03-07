@@ -142,3 +142,16 @@ p {
         background-size: 72px 72px;
     }
 }
+
+.image-container {
+  margin-top: 40px; /* extra space above the image */
+  padding-top: 20px; /* optional, adds internal space */
+  border-top: 3px solid #ccc; /* optional, adds a visual separator */
+}
+
+#bottomImage {
+  display: block;
+  width: 100%;
+  max-width: 480px;
+  margin: 20px auto; \
+}
