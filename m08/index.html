@@ -1,29 +1,33 @@
 <!DOCTYPE html>
-<html lang=en>
+<html lang="en">
 <head>
   <title>JavaScript & jQuery - Chapter 5: Document Object Model - Add Element</title>
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>  
-
-  <body>
-    <div id="page">
-      <h1 id="header">List</h1>
-      <h2>Buy groceries</h2>
-      <ul id="todo">
-        <li id="one" class="hot">
-          <em>fresh</em>
-          figs
-        </li>
-        <li id="two" class="hot">pine nuts</li>
-        <li id ="three" class="hot">honey</li>
-        <li id="four">balsamic vinegar</li>
-      </ul>
-        <!-- Text box for user input -->
+<body>
+  <div id="page">
+    <h1 id="header">List</h1>
+    <h2>Buy groceries</h2>
+    <ul id="todo">
+      <li id="one" class="hot">
+        <em>fresh</em> figs
+      </li>
+      <li id="two" class="hot">pine nuts</li>
+      <li id="three" class="hot">honey</li>
+      <li id="four">balsamic vinegar</li>
+    </ul>
+    <!-- Text box for user input -->
     <input type="text" id="newItem" placeholder="Enter new item">
     <!-- Button that calls the addItem function when clicked -->
     <button onclick="addItem()">Add new grocery item</button>
-  </div>
-    <script src="js/script.js"></script>
-  </body>
+    
+ <!-- Separate container for the image -->
+<div class="image-container">
+  <img id="bottomImage" src="images/your-image.jpg" alt="Bottom Image">
+</div>
+  <script src="js/script.js"></script>
+</div>
+</body>
 </html>
+
