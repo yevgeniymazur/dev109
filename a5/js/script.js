@@ -1,27 +1,27 @@
 // Array of image objects, each with a src, alt, and description
 const images = [
   {
-    src: "img1.webp",
+    src: "images/img1.png",
     alt: "Thunderstorm weather over a city",
     description: "A Thunderstorm over a city with heavy winds and rain, The city is in darkness."
   },
   {
-    src: "img2.webp",
+    src: "images/img2.png",
     alt: "Floating In the clouds",
     description: "Nothing but sky and clouds."
   },
   {
-    src: "img3.webp",
+    src: "images/img3.png",
     alt: "Lightning striking the ocean",
     description: "A storm engulfing the ocean, lightning, and rain with heavy winds."
   },
   {
-    src: "img4.webp",
+    src: "images/img4.png",
     alt: "A panoramic view of a ocean",
     description: "A sweeping panoramic view of a vast ocean with rolling waves and a blue sky with clouds hugging the sun."
   },
   {
-    src: "img5.webp",
+    src: "images/img5.png",
     alt: "A calm morning joungle with fog in the valleys",
     description: "A tranquil jungle scene with soft white fog in the valleys, perfect for relaxation."
   }
