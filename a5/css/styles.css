@@ -26,7 +26,7 @@ html, body {
 /* Carousel Container: Full width, height adjusted for footer */
 #carousel-container {
   width: 100%;
-  height: calc(100vh - 150px); /* Adjust if needed to leave room for footer */
+  height: calc(100vh - 150px);
   position: relative;
   overflow: hidden;
 }
