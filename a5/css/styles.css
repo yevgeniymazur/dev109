@@ -1,4 +1,4 @@
-/* Global Styles */
+/* Global Styles: Full viewport with black background */
 html, body {
   margin: 0;
   padding: 0;
@@ -23,10 +23,10 @@ html, body {
   color: black;
 }
 
-/* Carousel Container: Full width, with height adjusted for footer */
+/* Carousel Container: Full width, height adjusted for description and footer */
 #carousel-container {
   width: 100%;
-  height: calc(100vh - 150px); /* Leaves room for the footer (adjust 150px as needed) */
+  height: calc(100vh - 220px); /* Adjust height to leave room for description and footer */
   position: relative;
   overflow: hidden;
 }
@@ -39,20 +39,18 @@ html, body {
   display: block;
 }
 
-/* Description Overlay on Carousel */
+/* Description below the image with white text */
 #description {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80%;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
+  width: 100%;
+  background-color: black;
+  color: white;
   text-align: center;
+  padding: 15px;
+  font-size: 1.2em;
   box-sizing: border-box;
 }
 
-/* Footer Styling: Stretches full width and centers its content */
+/* Footer: Contains navigation buttons and validator icons */
 #footer {
   width: 100%;
   background-color: #111;
