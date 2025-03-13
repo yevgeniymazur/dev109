@@ -23,10 +23,10 @@ html, body {
   color: black;
 }
 
-/* Carousel Container: Full width, height adjusted for description and footer */
+/* Carousel Container: Full width, height adjusted for footer */
 #carousel-container {
   width: 100%;
-  height: calc(100vh - 220px); /* Adjust height to leave room for description and footer */
+  height: calc(100vh - 150px); /* Adjust if needed to leave room for footer */
   position: relative;
   overflow: hidden;
 }
@@ -39,26 +39,23 @@ html, body {
   display: block;
 }
 
-/* Description below the image with white text */
-#description {
-  width: 100%;
-  background-color: black;
-  color: white;
-  text-align: center;
-  padding: 15px;
-  font-size: 1.2em;
-  box-sizing: border-box;
-}
-
-/* Footer: Contains navigation buttons and validator icons */
+/* Footer: Black background containing description, buttons, and validator icons */
 #footer {
   width: 100%;
-  background-color: #111;
+  background-color: black;
   padding: 10px 0;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/* Description styling within footer */
+#description {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.2em;
+  box-sizing: border-box;
 }
 
 /* Navigation Buttons Styling */
