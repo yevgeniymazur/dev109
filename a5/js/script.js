@@ -1,29 +1,29 @@
 // Array of image objects, each with a src, alt, and description
 const images = [
   {
-    src: "img1.jpg",
-    alt: "A serene landscape with mountains and a lake",
-    description: "A serene landscape showing snow-capped mountains reflected in a crystal clear lake during sunrise."
+    src: "img1.webp",
+    alt: "Thunderstorm weather over a city",
+    description: "A Thunderstorm over a city with heavy winds and rain, The city is in darkness."
   },
   {
-    src: "img2.jpg",
-    alt: "A bustling cityscape at night",
-    description: "A vibrant cityscape with skyscrapers lit up against the night sky and busy streets."
+    src: "img2.webp",
+    alt: "Floating In the clouds",
+    description: "Nothing but sky and clouds."
   },
   {
-    src: "img3.jpg",
-    alt: "A close-up of a blooming flower",
-    description: "An intricate close-up of a blooming flower showcasing its vibrant colors and delicate petals."
+    src: "img3.webp",
+    alt: "Lightning striking the ocean",
+    description: "A storm engulfing the ocean, lightning, and rain with heavy winds."
   },
   {
-    src: "img4.jpg",
-    alt: "A panoramic view of a desert",
-    description: "A sweeping panoramic view of a vast desert with rolling sand dunes and a clear blue sky."
+    src: "img4.webp",
+    alt: "A panoramic view of a ocean",
+    description: "A sweeping panoramic view of a vast ocean with rolling waves and a blue sky with clouds hugging the sun."
   },
   {
-    src: "img5.jpg",
-    alt: "A calm beach with turquoise water",
-    description: "A tranquil beach scene with soft white sand and clear turquoise waters, perfect for relaxation."
+    src: "img5.webp",
+    alt: "A calm morning joungle with fog in the valleys",
+    description: "A tranquil jungle scene with soft white fog in the valleys, perfect for relaxation."
   }
 ];
 
