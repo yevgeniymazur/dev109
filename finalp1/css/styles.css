@@ -1,145 +1,155 @@
+/* Global Styles */
 * {
-				font-family: Arial, Verdana, sans-serif;
-				color: black;
-				text-align: center;}
-			body {
-				width: 90%;
-				margin: 0 auto;
-        background-image: url("https://e0.pxfuel.com/wallpapers/655/814/desktop-wallpaper-dark-web-dark-developer.jpg");
-        background-size: cover;
-        background-repeat:no-repeat;
-        background-position: center;
-        }
-			h1 {
-   font-family: 'Dodgy Ultra Ultra';
-   font-weight: normal;
-   font-style: normal;
-} 
-      #content {
-				overflow: auto;}
-			#nav, #feature, #footer {
-				margin: 1%;}
-     #nav {
-       
-       padding: 0.8em;
-       }
-     #footer {
-       margin: 1%;
-       padding: 0.5em;
-       padding-top: 100%;
-       }
-       
-       li {
-				display: inline;
-				padding: 0.5em;}
-       
-       .column1 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-        .column2 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-        .column3 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-        .column4 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-        .column5 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
+  font-family: Arial, Verdana, sans-serif;
+  color: black;
+  text-align: center;
+}
+body {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url("https://e0.pxfuel.com/wallpapers/655/814/desktop-wallpaper-dark-web-dark-developer.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Header & Navigation */
+h1 {
+  font-family: 'Dodgy Ultra Ultra';
+  font-weight: normal;
+  font-style: normal;
+}
+#nav, #feature, #footer {
+  margin: 1%;
+}
+#nav {
+  padding: 0.8em;
+}
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+/* Content Container */
+#content {
+  overflow: auto;
+}
+
+/* Feature Section */
+#feature {
+  margin: 6%;
+  height: 10em;
+  margin-bottom: 1em;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+.article {
+  height: 10em;
+  margin-bottom: 1em;
+}
+#feature ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+#feature li {
+  margin-bottom: 10px;
+}
+
+/* About Me Section */
+.about-me-container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Column Layouts for Other Sections */
+.column1, .column2, .column3, .column4, .column5 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;
+  background-color: #2F3638;
+}
+.columnh1, .columnh2, .columnh3 {
+  width: 31.3%;
+  float: left;
+  margin: 1%;
+  background-color: #2F3638;
+}
+.columnh4, .columnh5 {
+  width: 35%;
+  float: left;
+  margin: 1%;
+  background-color: #2F3638;
+}
 .columnh1 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-        .columnh2 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-        .columnh3 {
-          width: 31.3%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        } 
- .columnh4 {
-          width: 35%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-        .columnh5 {
-          width: 35%;
-          float: left;
-          margin: 1%;
-          background-color: #2F3638;
-        }
-.columnh1 {
-    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/github.png'); 
-    background-size: cover;
-    background-position: center;
+  background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/github.png');
+  background-size: cover;
+  background-position: center;
 }
 .columnh2 {
-    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/About.png'); 
-     background-size: cover;
-    background-position: center;
-  }  
+  background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/About.png');
+  background-size: cover;
+  background-position: center;
+}
 .columnh3 {
-    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/Road.png');
-    background-size: cover;
-    background-position: center; 
-   
+  background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/Road.png');
+  background-size: cover;
+  background-position: center;
 }
 
-	#feature {
- margin: 6%;
- height: 10em;
- margin-bottom: 1em;
-
- background-position: right;
- background-repeat:no-repeat;
- }
-.article {
-				height: 10em;
-				margin-bottom: 1em; }
-        
-#feature ul {
-    list-style-type: disc; /* Bullet points */
-    padding-left: 20px; /* Space from left for bullet points */
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 0.5em;
+  padding-top: 100%;
+  background-color: #333;
+  color: white;
 }
 
-#feature li {
-    margin-bottom: 10px; /* Vertical space between items */
+/* Final Slide with 5 Boxes */
+/* Container that holds all boxes */
+.boxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
+/* Individual box styling */
+.box {
+  background: #fff;
+  border: 1px solid #ccc;
+  width: 30%;
+  min-width: 250px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  margin: 10px auto;
+}
+.box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 
-
-/* Centered container for about-me content */
-.about-me-container {
-    text-align: center; /* Centers the text inside the container */
-    padding: 20px;
-    
-    border-radius: 10px;
-    
-    max-width: 600px; /* Limit the width of the paragraph */
-    margin: 0 auto; /* Center the container horizontally */
+/* Box Information (link and description beneath the image) */
+.box-info {
+  text-align: center;
+  margin-top: 10px;
+}
+.box-info a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: block;
+}
+.box-info p {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #666;
 }
