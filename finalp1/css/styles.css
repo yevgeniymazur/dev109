@@ -1,1 +1,145 @@
+* {
+				font-family: Arial, Verdana, sans-serif;
+				color: black;
+				text-align: center;}
+			body {
+				width: 90%;
+				margin: 0 auto;
+        background-image: url("https://e0.pxfuel.com/wallpapers/655/814/desktop-wallpaper-dark-web-dark-developer.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+        background-position: center;
+        }
+			h1 {
+   font-family: 'Dodgy Ultra Ultra';
+   font-weight: normal;
+   font-style: normal;
+} 
+      #content {
+				overflow: auto;}
+			#nav, #feature, #footer {
+				margin: 1%;}
+     #nav {
+       
+       padding: 0.8em;
+       }
+     #footer {
+       margin: 1%;
+       padding: 0.5em;
+       padding-top: 100%;
+       }
+       
+       li {
+				display: inline;
+				padding: 0.5em;}
+       
+       .column1 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .column2 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .column3 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .column4 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .column5 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+.columnh1 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .columnh2 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .columnh3 {
+          width: 31.3%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        } 
+ .columnh4 {
+          width: 35%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+        .columnh5 {
+          width: 35%;
+          float: left;
+          margin: 1%;
+          background-color: #2F3638;
+        }
+.columnh1 {
+    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/github.png'); 
+    background-size: cover;
+    background-position: center;
+}
+.columnh2 {
+    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/About.png'); 
+     background-size: cover;
+    background-position: center;
+  }  
+.columnh3 {
+    background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/Road.png');
+    background-size: cover;
+    background-position: center; 
+   
+}
 
+	#feature {
+ margin: 6%;
+ height: 10em;
+ margin-bottom: 1em;
+
+ background-position: right;
+ background-repeat:no-repeat;
+ }
+.article {
+				height: 10em;
+				margin-bottom: 1em; }
+        
+#feature ul {
+    list-style-type: disc; /* Bullet points */
+    padding-left: 20px; /* Space from left for bullet points */
+}
+
+#feature li {
+    margin-bottom: 10px; /* Vertical space between items */
+}
+
+
+
+/* Centered container for about-me content */
+.about-me-container {
+    text-align: center; /* Centers the text inside the container */
+    padding: 20px;
+    
+    border-radius: 10px;
+    
+    max-width: 600px; /* Limit the width of the paragraph */
+    margin: 0 auto; /* Center the container horizontally */
+}
