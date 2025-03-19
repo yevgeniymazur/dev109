@@ -110,10 +110,10 @@ li {
 /* ------------------------------ */
 
 /* Artifact container with scroll snapping */
+/* Artifact container with scroll snapping */
 .artifact-container {
   margin-top: 60px; /* Offset header height */
-  width: 80% !important;  
-  height: 80% !important; 
+  height: calc(100vh - 60px);
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   background-color: white;
