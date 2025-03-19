@@ -198,3 +198,14 @@ li {
       display: block;
       margin: 0 auto;
     }
+/* New container for modules page */
+.module-container {
+  width: 100%;
+  overflow: auto;
+  padding: 20px;
+}
+
+/* Clearfix for floated elements */
+.clear {
+  clear: both;
+}
