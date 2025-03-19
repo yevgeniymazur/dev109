@@ -199,23 +199,24 @@ li {
       margin: 0 auto;
     }
 
-/* New container for modules page */
+/* Module Container Styles */
 .module-container {
   width: 100%;
-  overflow: auto;
   padding: 20px;
-  color: white; /* Make all text inside white */
+  color: white !important; /* Force text to be white */
+  overflow: hidden; /* Force container to wrap floated children */
 }
 
-/* Clearfix for module container */
+/* Clearfix using pseudo-element */
 .module-container::after {
   content: "";
-  display: table;
+  display: block;
   clear: both;
 }
 
-
-.clear {
-  clear: both;
+/* Ensure links inside the module container are white */
+.module-container a {
+  color: white !important;
 }
+
 
