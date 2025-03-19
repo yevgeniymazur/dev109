@@ -118,6 +118,9 @@ li {
   background-color: white;
   z-index: 1000;
 }
+.artifact iframe {
+  border: none;
+}
 
 /* Each artifact slide occupies 50% of the viewport height */
 .artifact {
