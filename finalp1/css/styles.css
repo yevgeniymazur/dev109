@@ -116,6 +116,7 @@ li {
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   background-color: white;
+  z-index: 1000;
 }
 
 /* Each artifact slide occupies full viewport height */
