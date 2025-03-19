@@ -238,7 +238,7 @@ body {
 /* Each column takes up about 45% of the container width */
 .column {
   flex: 1;
-  max-width: 45%;
+  max-width: 33%;
 }
 
 /* Item style for each module container */
