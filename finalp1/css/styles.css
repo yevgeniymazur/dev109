@@ -148,6 +148,7 @@ li {
   justify-content: space-around;
   gap: 20px;
   padding: 20px;
+  background: #fff;
 }
 
 /* Each box styling with vertical stacking */
