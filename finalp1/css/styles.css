@@ -110,22 +110,22 @@ li {
 /* ------------------------------ */
 
 /* Artifact container with scroll snapping */
-/* Artifact container with scroll snapping */
 .artifact-container {
   margin-top: 60px; /* Offset header height */
-  height: calc(100vh - 60px);
+  height: calc(50vh - 60px);  /* Reduced from full viewport to 50% */
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   background-color: white;
   z-index: 1000;
 }
 
-/* Each artifact slide occupies full viewport height */
+/* Each artifact slide occupies 50% of the viewport height */
 .artifact {
-  height: 100vh;
+  height: 50vh;  /* Reduced height */
   scroll-snap-align: start;
   position: relative;
 }
+
 /* Fade animation styles */
 .fade {
   opacity: 0;
