@@ -235,10 +235,10 @@ body {
   justify-content: center;
 }
 
-/* Each column takes up about 45% of the container width */
+/* Each column takes up about 50% of the container width */
 .column {
   flex: 1;
-  max-width: 33%;
+  max-width: 50%;
 }
 
 /* Item style for each module container */
@@ -272,5 +272,6 @@ body {
   text-align: center;
   font-size: 1em;
 }
+
 
 
