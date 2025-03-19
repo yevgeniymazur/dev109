@@ -235,7 +235,7 @@ body {
   justify-content: center;
 }
 
-/* Each column takes up about 50% of the container width */
+/* Each column takes up 50% of the container's width */
 .column {
   flex: 1;
   max-width: 50%;
@@ -245,7 +245,7 @@ body {
 .item {
   position: relative;
   margin-bottom: 20px;
-  height: 200px; 
+  height: 200px;
   background-color: #444;
   overflow: hidden;
   border: 1px solid #555;
@@ -272,6 +272,7 @@ body {
   text-align: center;
   font-size: 1em;
 }
+
 
 
 
