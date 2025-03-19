@@ -112,7 +112,7 @@ li {
 /* Artifact container with scroll snapping */
 .artifact iframe {
   width: 80% !important;  
-  height: auto !important; 
+  height: 80% !important; 
   margin: 0 auto;          
   display: block;
   background-color: white; 
