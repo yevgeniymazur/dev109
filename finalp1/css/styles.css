@@ -112,7 +112,7 @@ li {
 /* Artifact container with scroll snapping */
 .artifact-container {
   margin-top: 60px; /* Offset header height */
-  height: calc(50vh - 60px);  /* Reduced from full viewport to 50% */
+  height: calc(70vh - 60px);  
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   background-color: white;
@@ -121,7 +121,7 @@ li {
 
 /* Each artifact slide occupies 50% of the viewport height */
 .artifact {
-  height: 50vh;  /* Reduced height */
+  height: 70vh;  
   scroll-snap-align: start;
   position: relative;
 }
