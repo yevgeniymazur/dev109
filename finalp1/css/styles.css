@@ -272,6 +272,9 @@ body {
   text-align: center;
   font-size: 1em;
 }
+.giphy-embed {
+  border: none;
+}
 
 
 
