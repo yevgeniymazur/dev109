@@ -1,17 +1,27 @@
-/* Original Global Styles */
+/* Global Styles */
 * {
   font-family: Arial, Verdana, sans-serif;
   color: black;
   text-align: center;
 }
+
+/* Ensure html and body take full height and width */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background image fills the entire screen */
 body {
-  width: 90%;
-  margin: 0 auto;
   background-image: url("https://e0.pxfuel.com/wallpapers/655/814/desktop-wallpaper-dark-web-dark-developer.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
+
+/* Header & Navigation */
 h1 {
   font-family: 'Dodgy Ultra Ultra';
   font-weight: normal;
@@ -20,16 +30,11 @@ h1 {
 #content {
   overflow: auto;
 }
-#nav, #feature, #footer {
+#nav, #feature {
   margin: 1%;
 }
 #nav {
   padding: 0.8em;
-}
-#footer {
-  margin: 1%;
-  padding: 0.5em;
-  padding-top: 100%;
 }
 li {
   display: inline;
@@ -37,48 +42,40 @@ li {
 }
 
 /* Original Column Layouts */
-.column1,
-.column2,
-.column3,
-.column4,
-.column5 {
+.column1, .column2, .column3, .column4, .column5 {
   width: 31.3%;
   float: left;
   margin: 1%;
   background-color: #2F3638;
 }
-.columnh1,
-.columnh2,
-.columnh3 {
+.columnh1, .columnh2, .columnh3 {
   width: 31.3%;
   float: left;
   margin: 1%;
   background-color: #2F3638;
 }
-.columnh4,
-.columnh5 {
+.columnh4, .columnh5 {
   width: 35%;
   float: left;
   margin: 1%;
   background-color: #2F3638;
 }
 .columnh1 {
-  background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/github.png');
+  background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/github.png'); 
   background-size: cover;
   background-position: center;
 }
 .columnh2 {
-  background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/About.png');
+  background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/About.png'); 
   background-size: cover;
   background-position: center;
 }
 .columnh3 {
   background-image: url('https://yevgeniymazur.github.io/dev109/midterm/images/Road.png');
   background-size: cover;
-  background-position: center;
+  background-position: center; 
 }
-
-/* Original Feature Section */
+/* Feature Section */
 #feature {
   margin: 6%;
   height: 10em;
@@ -98,7 +95,7 @@ li {
   margin-bottom: 10px; /* Vertical space between items */
 }
 
-/* Original About-Me Section */
+/* About Me Section */
 .about-me-container {
   text-align: center; /* Centers the text inside the container */
   padding: 20px;
@@ -107,41 +104,19 @@ li {
   margin: 0 auto; /* Center the container horizontally */
 }
 
-/* ------------------------------ */
-/* Additional Code for Artifact Page */
-/* ------------------------------ */
-
-/* Artifact container with scroll snapping */
-.artifact-container {
-  margin-top: 60px; /* Offset header height */
-  height: calc(100vh - 60px);
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-/* Each artifact slide occupies full viewport height */
-.artifact {
-  height: 100vh;
-  scroll-snap-align: start;
-  position: relative;
-}
-
-/* Fade animation styles */
-.fade {
-  opacity: 0;
-  transition: opacity 0.8s ease-in-out;
-}
-.fade.active {
-  opacity: 1;
-}
-
-/* Final slide styling */
-.final-slide {
-  background-color: #f4f4f4;
+/* Footer: Fixed to the bottom of the screen */
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
   padding: 20px;
+  background-color: #333;
+  color: white;
 }
 
-/* Container for the 5 boxes */
+/* Final Slide with 5 Boxes */
+/* Container that holds all boxes */
 .boxes-container {
   display: flex;
   flex-wrap: wrap;
@@ -161,15 +136,16 @@ li {
   flex-direction: column;
   align-items: center;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-  margin: 10px auto;
 }
+
+/* Styling for the box image */
 .box img {
   width: 80px;
   height: 80px;
   object-fit: cover;
 }
 
-/* Box Information (link and description beneath the image) */
+/* Styling for the box information (link and description below the image) */
 .box-info {
   text-align: center;
   margin-top: 10px;
@@ -184,12 +160,4 @@ li {
   margin-top: 5px;
   font-size: 0.9em;
   color: #666;
-}
-
-/* Footer */
-#footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #333;
-  color: white;
 }
