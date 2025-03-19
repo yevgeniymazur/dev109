@@ -198,14 +198,24 @@ li {
       display: block;
       margin: 0 auto;
     }
+
 /* New container for modules page */
 .module-container {
   width: 100%;
   overflow: auto;
   padding: 20px;
+  color: white; /* Make all text inside white */
 }
 
-/* Clearfix for floated elements */
+/* Clearfix for module container */
+.module-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
 .clear {
   clear: both;
 }
+
