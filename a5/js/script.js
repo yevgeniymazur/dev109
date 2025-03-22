@@ -31,6 +31,7 @@ let currentIndex = 0;
 const timerDuration = 4; // seconds
 let timerIntervalId;
 let remainingTime = timerDuration;
+let autoAdvanceEnabled = true;
 
 // Get references to DOM elements
 const imgElement = document.getElementById('carousel-image');
@@ -38,6 +39,7 @@ const descElement = document.getElementById('description');
 const timerElement = document.getElementById('timer');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
+const toggleAutoBtn = document.getElementById('toggleAuto');
 
 // Function to update image and description based on currentIndex
 function updateCarousel() {
@@ -61,20 +63,20 @@ function showPrevImage() {
   resetTimer();
 }
 
-// Reset the countdown timer without stopping the interval
+// Reset the countdown timer
 function resetTimer() {
   remainingTime = timerDuration;
   timerElement.textContent = remainingTime;
 }
 
-// Start automatic cycling of the carousel and update the timer countdown
-function startCarousel() {
-  updateCarousel(); // Display the first image immediately
-  timerElement.textContent = timerDuration;
+// Start the auto advance interval (timer and image cycling)
+function startAutoAdvance() {
+  resetTimer();
+  autoAdvanceEnabled = true;
+  toggleAutoBtn.textContent = "Pause";
   timerIntervalId = setInterval(() => {
     remainingTime--;
     if (remainingTime <= 0) {
-      // Time's up: cycle to the next image and reset timer
       currentIndex = (currentIndex + 1) % images.length;
       updateCarousel();
       remainingTime = timerDuration;
@@ -83,10 +85,31 @@ function startCarousel() {
   }, 1000);
 }
 
+// Stop the auto advance interval
+function stopAutoAdvance() {
+  autoAdvanceEnabled = false;
+  toggleAutoBtn.textContent = "Play";
+  clearInterval(timerIntervalId);
+}
+
+// Toggle auto advance on/off when button is clicked
+toggleAutoBtn.addEventListener('click', () => {
+  if (autoAdvanceEnabled) {
+    stopAutoAdvance();
+  } else {
+    startAutoAdvance();
+  }
+});
+
 // Attach event listeners to the navigation buttons
 prevBtn.addEventListener('click', showPrevImage);
 nextBtn.addEventListener('click', showNextImage);
 
 // Start the carousel when the window loads
-window.onload = startCarousel;
+window.onload = () => {
+  updateCarousel(); // Show the first image immediately
+  timerElement.textContent = timerDuration;
+  startAutoAdvance();
+};
+
 
