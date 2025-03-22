@@ -7,7 +7,7 @@ const images = [
   },
   {
     src: "images/img2.png",
-    alt: "Floating In the clouds",
+    alt: "Floating in the clouds",
     description: "Nothing but sky and clouds."
   },
   {
@@ -17,19 +17,18 @@ const images = [
   },
   {
     src: "images/img4.png",
-    alt: "A panoramic view of a ocean",
+    alt: "A panoramic view of an ocean",
     description: "A sweeping panoramic view of a vast ocean with rolling waves and a blue sky with clouds hugging the sun."
   },
   {
     src: "images/img5.png",
-    alt: "A calm morning joungle with fog in the valleys",
+    alt: "A calm morning jungle with fog in the valleys",
     description: "A tranquil jungle scene with soft white fog in the valleys, perfect for relaxation."
   }
 ];
 
 let currentIndex = 0;
 const timerDuration = 4; // seconds
-let intervalId;
 let timerIntervalId;
 let remainingTime = timerDuration;
 
@@ -48,44 +47,46 @@ function updateCarousel() {
   descElement.textContent = currentImage.description;
 }
 
-// Reset the timer whenever user manually navigates
-function resetTimer() {
-  clearInterval(intervalId);
-  clearInterval(timerIntervalId);
-  remainingTime = timerDuration;
-  timerElement.textContent = remainingTime;
-  startCarousel();
-}
-
-// Show the next image and loop back to the start if at the end
+// Manual navigation: show the next image
 function showNextImage() {
   currentIndex = (currentIndex + 1) % images.length;
   updateCarousel();
   resetTimer();
 }
 
-// Show the previous image and loop to the end if at the start
+// Manual navigation: show the previous image
 function showPrevImage() {
   currentIndex = (currentIndex - 1 + images.length) % images.length;
   updateCarousel();
   resetTimer();
 }
 
-// Attach event listeners to the buttons using JavaScript
-prevBtn.addEventListener('click', showPrevImage);
-nextBtn.addEventListener('click', showNextImage);
+// Reset the countdown timer without stopping the interval
+function resetTimer() {
+  remainingTime = timerDuration;
+  timerElement.textContent = remainingTime;
+}
 
-// Start automatic cycling of the carousel and update timer countdown
+// Start automatic cycling of the carousel and update the timer countdown
 function startCarousel() {
-  intervalId = setInterval(showNextImage, timerDuration * 1000);
+  updateCarousel(); // Display the first image immediately
+  timerElement.textContent = timerDuration;
   timerIntervalId = setInterval(() => {
     remainingTime--;
     if (remainingTime <= 0) {
+      // Time's up: cycle to the next image and reset timer
+      currentIndex = (currentIndex + 1) % images.length;
+      updateCarousel();
       remainingTime = timerDuration;
     }
     timerElement.textContent = remainingTime;
   }, 1000);
 }
 
+// Attach event listeners to the navigation buttons
+prevBtn.addEventListener('click', showPrevImage);
+nextBtn.addEventListener('click', showNextImage);
+
 // Start the carousel when the window loads
 window.onload = startCarousel;
+
