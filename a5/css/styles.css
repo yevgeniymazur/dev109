@@ -21,6 +21,7 @@ html, body {
   padding: 5px 10px;
   border: 1px solid #000;
   color: black;
+  z-index: 1000; /* Ensures the timer stays on top of other elements */
 }
 
 /* Carousel Container: Full width, height adjusted for footer */
