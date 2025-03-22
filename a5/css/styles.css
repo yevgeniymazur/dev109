@@ -59,13 +59,16 @@ html, body {
   box-sizing: border-box;
 }
 
-/* Navigation Buttons Styling */
+/* Navigation and Toggle Buttons Styling */
 #buttons {
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds space between buttons */
 }
 
 #buttons button {
-  margin: 0 10px;
   padding: 10px 20px;
   cursor: pointer;
 }
@@ -82,4 +85,5 @@ html, body {
   margin: 0 10px;
   image-rendering: crisp-edges;
 }
+
 
